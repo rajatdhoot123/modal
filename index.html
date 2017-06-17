@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" >
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" type="text/css"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" type="text/css"  rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>My App</title>
 </head>
 <body>
     <div class="container ">
         <div class="row headtop">
             <div class="col-md-6">
-            <img class="img-circle img-responsive" src="Images/logo.jpg">
+            <img class="img-circle img-responsive" src="Images/logo.jpg" alt="Logo">
             </div>
             <div class="col-md-6 text-right tex" >
                 <h1 >JANE DOETTE</h1>
@@ -21,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <img class="image" src="Images/dog2.jpg">
+                <img class="image" src="Images/dog2.jpg" alt="Dogs Images">
             </div>
         </div>
         <div class="row">
@@ -31,23 +34,75 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <img class="img-responsive item" src="http://placekitten.com/390/270">
+                <a href="#" data-toggle="modal" data-target="#cats">
+                        <img src="http://placekitten.com/390/270" class="img-responsive" alt="Cats Images">
+                    </a>
                 <h3>Cats Images</h3>
-                http://placekitten.com/390/270
+                <a href="http://placekitten.com/390/270">http://placekitten.com/390/270</a>
+
+                <div class="modal fade" id="cats" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title" id="myModalLabel">Cool Images</h2>
+                      </div>
+                      <div class="modal-body">
+                        <img src="http://placekitten.com/390/270" class="img-responsive" alt="Cats Images">
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+
+
             <div class="col-md-4">
-                <img class="img-responsive item" src="http://lorempixel.com/390/270">
+                <a href="#" data-toggle="modal" data-target="#bokeh">
+                        <img src="http://lorempixel.com/390/270" class="img-responsive" alt="COol Images">
+                    </a>
                 <h3>Cool Images</h3>
-                http://lorempixel.com/390/270
+                <a href="http://lorempixel.com/390/270">http://lorempixel.com/390/270</a>
+
+                <div class="modal fade" id="bokeh" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title" id="myModalLabel">Cool Images</h2>
+                      </div>
+                      <div class="modal-body">
+                        <img src="http://lorempixel.com/390/270" class="img-responsive" alt="Cool Images">
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+
+
             <div class="col-md-4">
-                <img class="img-responsive item" src="http://lorempixel.com/390/270/sports">
+                <a href="#" data-toggle="modal" data-target="#cool">
+                        <img src="http://lorempixel.com/390/270/sports" class="img-responsive" alt="Sporty Images">
+                    </a>
                 <h3>Sporty Images</h3>
-                http://lorempixel.com/390/270/sports
+                <a href="http://lorempixel.com/390/270/sports">http://lorempixel.com/390/270/sports</a>
+
+                <div class="modal fade" id="cool" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title" id="myModalLabel">Sporty Images</h2>
+                      </div>
+                      <div class="modal-body">
+                        <img src="http://lorempixel.com/390/270/sports" class="img-responsive" alt="Sporty">
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+
+
         </div>
     </div>
 </body>
 </html>
-
-
